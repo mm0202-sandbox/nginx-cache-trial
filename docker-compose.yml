@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  nginx:
+    build:
+      context: .
+    ports:
+      - 59999:80
+    networks:
+      - development
+
+networks:
+  development:
+    external: true
