@@ -1,6 +1,10 @@
 # nginx-cache-trial
 
-Nginxのキャッシュ設定トライアル。おおよそ、後述の参考ページのトレース。`proxy_pass`の部分だけ`https://example.com/`に変更しています。
+Nginxのキャッシュ設定トライアル。おおよそ、後述の参考ページのトレース。
+
+## 参考ページとの相違点
+* `proxy_pass`の部分は`https://example.com/`に変更
+* `docker-compose.yml`を追加
 
 ## 動作確認
 * `docker network create development`でネットワークを生成するか、`docker-compose.yml`からネットワーク設定部分をコメントアウト
